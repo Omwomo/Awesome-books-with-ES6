@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>Awesome Books Pair Project</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <a class="logo" href="#">Awesome Books</a>
+        <div>
+            <ul class="links">
+                <li onclick="toggleSection('lists')" id="list"><a href="#">List</a></li>
+                <li onclick="toggleSection('forms')" id="add-new"><a href="#">Add new</a></li>
+                <li onclick="toggleSection('contact-section')" id="contact"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <section id="lists">
+    <h1>Awesome Books</h1>
+    <div class="books">
+      <ul id="book-lists"></ul>
+    </div>
+  </section>
+  <!--hr-->
+  <section id="forms">
+    <h2>Add a new book</h2>
+    <form class="form">
+      <input type="text" name="title" placeholder="title" id="title"><br>
+      <br>
+      <input type="text" name="author" placeholder="author" id="author"><br>
+      <br>
+      <button type="submit" id="button">Add</button>
+    </form>
+  </section>
+
+  <section id="contact-section">
+    <div class="contact">
+      <h2>Contact information</h2>
+      <p>Do you have any questions or you want to say "Hello" <br> You can reach out to us</p>
+      <ul>
+        <li>Our email mail@mail.com</li>
+        <li>Our phone number 00253857584</li>
+        <li>Our address streetname 22, 366925, city, country</li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="footer">Copyright</div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
