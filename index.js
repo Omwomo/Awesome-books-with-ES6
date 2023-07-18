@@ -1,34 +1,13 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-named-default */
-/* eslint-disable no-unused-vars */
 import BookCollection from './modules/BookCollection.js';
-import Book from './modules/Book.js';
 
-import * as toggleSection from './modules/toggle.js';
-import * as removeBtn from './modules/remove-button.js';
-import * as submitBtn from './modules/submit.js';
-
-import {
-  DateTime,
-  Duration,
-  FixedOffsetZone,
-  IANAZone,
-  Info,
-  Interval,
-  InvalidZone,
-  Settings,
-  SystemZone,
-  VERSION,
-  Zone,
-}
-from './modules/luxon.js';
+import { DateTime } from './modules/luxon.js';
+import toggleSection from './modules/toggle.js';
 
 const bookCollection = new BookCollection();
 
 bookCollection.displayBooks();
 
 // Creating current date and time
-
 const dateTime = document.getElementById('date');
 
 function formatDate(date) {
@@ -39,3 +18,35 @@ const now = DateTime.now();
 const formattedDate = formatDate(now);
 
 dateTime.innerHTML = formattedDate;
+
+document.getElementById('button').addEventListener('click', () => {
+  const titleInput = document.getElementById('title');
+  const authorInput = document.getElementById('author');
+
+  bookCollection.addBook(titleInput.value, authorInput.value);
+  bookCollection.displayBooks();
+
+  titleInput.value = '';
+  authorInput.value = '';
+});
+
+document.getElementById('list').addEventListener('click', () => {
+  toggleSection('li');
+});
+
+document.getElementById('add-new').addEventListener('click', () => {
+  toggleSection('forms');
+});
+
+document.getElementById('contact').addEventListener('click', () => {
+  toggleSection('contact-section');
+});
+
+document.getElementById('book-lists').addEventListener('click', (event) => {
+  if (event.target.classList.contains('remove-button')) {
+    const { title } = event.target.dataset;
+
+    bookCollection.removeBook(title);
+    bookCollection.displayBooks();
+  }
+});
