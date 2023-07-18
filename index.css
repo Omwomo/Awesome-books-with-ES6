@@ -1,0 +1,118 @@
+body {
+  background-color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.books {
+  border: 2px solid #000;
+}
+
+#book-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 0%;
+  padding-left: 0;
+}
+
+#book-lists .list-item {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  float: left;
+}
+
+#book-lists .remove-button {
+  margin-bottom: 2.5%;
+  width: auto;
+}
+
+hr {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 30%;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  text-align: center;
+}
+
+nav {
+  border: 1.5px solid #000;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.links {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  margin-right: 1rem;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.links li a {
+  text-decoration: none;
+}
+
+.links li a:hover {
+  color: blue;
+}
+
+#footer {
+  text-align: left;
+  border: 1.5px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  display: none;
+}
+
+#date {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#lists {
+  display: block;
+}
+
+#forms {
+  display: none;
+}
