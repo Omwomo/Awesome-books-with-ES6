@@ -108,3 +108,11 @@ section {
   display: flex;
   justify-content: flex-end;
 }
+
+#lists {
+  display: block;
+}
+
+#forms {
+  display: none;
+}
