@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
-  <title>Awesome Books Pair Project</title>
+  <title>Awesome Books with ES6 Modules</title>
 </head>
 <body>
   <header>
@@ -13,12 +13,13 @@
         <a class="logo" href="#">Awesome Books</a>
         <div>
             <ul class="links">
-                <li onclick="toggleSection('lists')" id="list"><a href="#">List</a></li>
-                <li onclick="toggleSection('forms')" id="add-new"><a href="#">Add new</a></li>
-                <li onclick="toggleSection('contact-section')" id="contact"><a href="#">Contact</a></li>
+                <li id="list"><a href="#">List</a></li>
+                <li id="add-new"><a href="#">Add new</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <div id="date"></div>
   </header>
   <section id="lists">
     <h1>Awesome Books</h1>
@@ -52,6 +53,6 @@
 
   <div id="footer">Copyright</div>
 
-  <script type="module" src="index.js"></script>
+  <script type="module" src="index.js" defer></script>
 </body>
 </html>

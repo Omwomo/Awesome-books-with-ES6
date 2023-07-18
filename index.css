@@ -102,3 +102,9 @@ h2 {
 section {
   display: none;
 }
+
+#date {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
