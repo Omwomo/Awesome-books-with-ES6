@@ -42,7 +42,7 @@ hr {
   border-radius: 30%;
 }
 
-#forms {
+.forms {
   display: flex;
   justify-content: center;
   align-items: center;
