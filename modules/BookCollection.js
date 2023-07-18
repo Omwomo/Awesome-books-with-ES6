@@ -13,8 +13,8 @@ export default class BookCollection {
     this.saveToLocalStorage();
   }
 
-  removeBook = (title) => {
-    this.books = this.books.filter((book) => book.title !== title);
+  removeBook(index) {
+    this.books.splice(index, 1);
     this.saveToLocalStorage();
   }
 
@@ -30,7 +30,7 @@ export default class BookCollection {
       const rmvBtn = document.createElement('button');
       rmvBtn.textContent = 'Remove';
       rmvBtn.classList.add('remove-button');
-      rmvBtn.dataset.title = book.title;
+      rmvBtn.dataset.index = book.index;
 
       listItem.innerHTML = `"${book.title}" by ${book.author}`;
 

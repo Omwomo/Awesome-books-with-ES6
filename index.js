@@ -45,9 +45,9 @@ document.getElementById('contact').addEventListener('click', () => {
 
 document.getElementById('book-lists').addEventListener('click', (event) => {
   if (event.target.classList.contains('remove-button')) {
-    const { title } = event.target.dataset;
+    const { index } = event.target.dataset;
 
-    bookCollection.removeBook(title);
+    bookCollection.removeBook(index);
     bookCollection.displayBooks();
   }
 });
