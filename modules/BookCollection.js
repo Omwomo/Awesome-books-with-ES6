@@ -13,7 +13,7 @@ export default class BookCollection {
     this.saveToLocalStorage();
   }
 
-  removeBook(index) {
+  removeBook = (index) => {
     this.books.splice(index, 1);
     this.saveToLocalStorage();
   }
@@ -39,8 +39,7 @@ export default class BookCollection {
     });
   }
 
-  saveToLocalStorage() {
-    // const serializedBooks = this.books.map(({ title, author }) => ({ title, author }));
+  saveToLocalStorage = () => {
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 }

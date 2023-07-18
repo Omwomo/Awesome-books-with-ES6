@@ -1,4 +1,4 @@
-export default function toggleSection(sectionId) {
+const toggleSection = (sectionId) => {
   const section = document.getElementById(sectionId);
 
   const sections = document.getElementsByTagName('section');
@@ -8,4 +8,6 @@ export default function toggleSection(sectionId) {
   }
 
   section.style.display = 'block';
-}
+};
+
+export default toggleSection;

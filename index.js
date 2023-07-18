@@ -10,9 +10,7 @@ bookCollection.displayBooks();
 // Creating current date and time
 const dateTime = document.getElementById('date');
 
-function formatDate(date) {
-  return date.toFormat("MMMM d',' yyyy 'at' hh:mm:ss a");
-}
+const formatDate = (date) => date.toFormat("MMMM d',' yyyy 'at' hh:mm:ss a");
 
 const now = DateTime.now();
 const formattedDate = formatDate(now);
