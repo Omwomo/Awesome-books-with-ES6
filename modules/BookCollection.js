@@ -6,14 +6,14 @@ export default class BookCollection {
   }
 
   // Using classes instead of objects for add book function.
-  addBook(title, author) {
+  addBook = (title, author) => {
     const book = new Book(title, author);
 
     this.books.push(book);
     this.saveToLocalStorage();
   }
 
-  removeBook(title) {
+  removeBook = (title) => {
     this.books = this.books.filter((book) => book.title !== title);
     this.saveToLocalStorage();
   }

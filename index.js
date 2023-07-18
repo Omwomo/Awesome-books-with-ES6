@@ -31,7 +31,7 @@ document.getElementById('button').addEventListener('click', () => {
 });
 
 document.getElementById('list').addEventListener('click', () => {
-  toggleSection('list');
+  toggleSection('lists');
 });
 
 document.getElementById('add-new').addEventListener('click', () => {
