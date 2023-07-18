@@ -19,7 +19,8 @@ const formattedDate = formatDate(now);
 
 dateTime.innerHTML = formattedDate;
 
-document.getElementById('button').addEventListener('click', () => {
+document.getElementById('button').addEventListener('click', (e) => {
+  e.preventDefault();
   const titleInput = document.getElementById('title');
   const authorInput = document.getElementById('author');
 

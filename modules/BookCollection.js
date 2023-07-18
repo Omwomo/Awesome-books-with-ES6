@@ -40,6 +40,7 @@ export default class BookCollection {
   }
 
   saveToLocalStorage() {
+    // const serializedBooks = this.books.map(({ title, author }) => ({ title, author }));
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 }
