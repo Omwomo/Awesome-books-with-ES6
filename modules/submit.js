@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import BookCollection from './BookCollection.js';
 
 const bookCollection = new BookCollection();

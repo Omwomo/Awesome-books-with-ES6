@@ -7,7 +7,6 @@ export default class BookCollection {
 
   // Using classes instead of objects for add book function.
   addBook(title, author) {
-    // eslint-disable-next-line no-use-before-define, no-undef
     const book = new Book(title, author);
 
     this.books.push(book);

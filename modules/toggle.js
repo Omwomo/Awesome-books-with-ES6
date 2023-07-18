@@ -3,22 +3,9 @@ export default function toggleSection(sectionId) {
 
   const sections = document.getElementsByTagName('section');
 
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < sections.length; i++) {
+  for (let i = 0; i < sections.length; i += 1) {
     sections[i].style.display = 'none';
   }
 
   section.style.display = 'block';
 }
-
-document.getElementById('list').addEventListener('click', () => {
-  toggleSection('lists');
-});
-
-document.getElementById('add-new').addEventListener('click', () => {
-  toggleSection('forms');
-});
-
-document.getElementById('contact').addEventListener('click', () => {
-  toggleSection('contact-section');
-});
