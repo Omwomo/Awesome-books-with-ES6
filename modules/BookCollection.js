@@ -18,7 +18,7 @@ export default class BookCollection {
     this.saveToLocalStorage();
   }
 
-  displayBooks() {
+  displayBooks = () => {
     const bookList = document.getElementById('book-lists');
     bookList.innerHTML = '';
 
